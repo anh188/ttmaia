@@ -1,0 +1,130 @@
+/* header */
+.menu {
+    background-color: #6E6756;
+    height: 60px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+
+}
+
+.menu-icon {
+    position: absolute;
+    background-color: #8C8574;
+    top: 0;
+    left: 10%;
+    width: 120px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.menu-list {
+    justify-content: space-around;
+    list-style: none;
+    color: #FFFFFF;
+    text-align: center;
+    width: 67%; 
+    margin-top: 16px;
+}
+.document_menu li{
+    position: relative;
+    background-color: #6E6756;
+    top: 20px;
+}
+ul.document_menu {
+    padding: 0;
+}
+
+.menu-list a{
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+.menu-list a:hover{
+    color: #FFFFFF;
+}
+
+.menu-list a::after{
+    content: "";
+    position: absolute;
+    background-color: #FFFFFF;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s ease-in-out;
+
+}
+.menu-list a:hover:after{
+    width: 100%;
+}
+.fa-house-chimney{
+    margin-right: 5px;
+}
+
+.menu-icon img {
+    width: 100%;
+    height: auto; 
+}
+
+.menu-icon-item {
+    object-fit: contain;
+}
+
+.mn-img img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
+.mn-img {
+    width: 100%;
+    height: 526px;
+    overflow: hidden; 
+}
+
+.menu-icon-list{
+    position: absolute;
+    right: 2%;
+    top: 10%;
+}
+.menu-box{
+    position: relative;
+}
+
+.icon-item{
+    background-color: #6E6756;
+    text-align: center;
+    margin-bottom: 10px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 10px;
+    /* height: 110px; */
+    width: 91px;
+
+}
+.icon-item a{
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform:uppercase;
+}
+.icon-item a i{
+    font-size: 40px;
+}
+.icon-item a div{
+    font-size: 10px;
+}
+.icon-item:hover{
+    background-color: #FFFFFF;
+    transition: 0.3s ease-in-out;
+}
+.icon-item:hover a{
+    color: #6E6756;
+}
