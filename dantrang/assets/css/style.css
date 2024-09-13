@@ -9,6 +9,49 @@ a{
     text-decoration: none !important;
 }
 
+.header_time{
+    display: flex;
+    justify-content: center;
+    margin: 3px 0;
+}
+.header_time h6{
+    margin: 0;
+    padding-top:6px;
+    color: #6E6756;
+}
+.header_time img{
+    width: 30px;
+    height: 20px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.search-box{
+    display: flex;
+    margin-left: 60px;
+    padding-left: 20px;
+    border: 1px solid;
+    border-radius: 50px;
+}
+.search-box input{
+    width: 350px;
+    border: none;
+}
+.search-box input:focus{
+    /* width: 350px; */
+    border: none !important;
+    outline: none;
+}
+.btn-search{
+    width: 28px;
+    height: 28px;
+    margin: 2px;
+    border: none;
+    border-radius: 50px;
+    background-color: #8C8574;
+}
+.btn-search i{
+    color: #FFFFFF;
+}
 #content{
     margin-bottom: 80px;
 }
@@ -29,6 +72,9 @@ ul.document_menu {
     width: 200px; 
     z-index: 3;
     
+}
+.icon-menu{
+    display: none;
 }
 
 /* Các mục con trong menu con */
@@ -82,6 +128,7 @@ ul.document_menu li a:hover {
 }
 
 .menu-list {
+    display: flex;
     justify-content: space-around;
     list-style: none;
     color: #FFFFFF;
@@ -227,7 +274,8 @@ ul.document_menu {
     /* width: 269px; */
     padding-right: 15px;
 }
-.post-content-left-top.d-flex {
+.post-content-left-top{
+    display: flex;
     overflow: hidden;
 }
 .post-content-left .left p{

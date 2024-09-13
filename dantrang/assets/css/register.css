@@ -1,5 +1,5 @@
 .menu-icon-list {
-    position:unset;
+    position:unset !important;
 }
 
 .form_register{
