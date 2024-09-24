@@ -74,7 +74,7 @@ ul.document_menu {
     
 }
 .icon-menu{
-    display: none;
+    display: none !important;
 }
 
 /* Các mục con trong menu con */
@@ -126,9 +126,14 @@ ul.document_menu li a:hover {
     justify-content: center;
     align-items: center; 
 }
+.menu-list-box{
+    display: flex; 
+    justify-content: space-around;
+    width: 100%;
+}
 
 .menu-list {
-    display: flex;
+    display: flex; 
     justify-content: space-around;
     list-style: none;
     color: #FFFFFF;

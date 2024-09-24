@@ -3,6 +3,11 @@
     .header_time{
         display: none;
     }
+    .menu-list{
+        /* display: none;
+        transition: 0.3s ease-in-out !important; */
+
+    }
     .icon-menu{
         display: flex !important;
         width: 100%;
@@ -12,10 +17,6 @@
         color: #ffffff;
         margin-right: 3%;
         font-size: 30px;
-    }
-    .menu-list-box {
-        position: fixed;
-        display: none;
     }
     .products{
         overflow: hidden;
@@ -31,19 +32,6 @@
 @media all and (min-width:320px) and (max-width: 767px){
     .post-content-left-middle_2{
         display: none;
-    }
-    .menu-icon {
-        width: 60px;
-        background-color: unset;
-        top: -20px;
-    }
-    .menu-list {
-        display: block;
-        width: 100%;
-        background-color: #6E6756;
-    }
-    .menu-list-box{
-        height: 100vh;
     }
     .post-content-left-top{
         display: block;
@@ -168,70 +156,31 @@
 /*tablet*/
 @media(min-width:767px) and (max-width: 1024px){
 
-    /* menu-list */
-    /* .menu-list{
-        display: none !important;
-    } */
-    /* .menu-list{
-        width: 30%;
-        display: block;
-        position: fixed;
-        background-color: #6E6756;
-        text-align: left;
-        height: 100vh;
-        left: 0;
-        top: 0;
-        margin: 0;
-        padding-top: 40px;
-        overflow-y: -200px;
-        transition: all 0.3s ease;
-        cursor: pointer;
-    } */
 
-    .menu-list li{
-        margin-top: 20px;
+    .post-content-left-middle_2{
+    grid-area: item6;
     }
 
-    ul.document_menu{
-        display: block !important;
-        position: unset;
-        top: 0;
-        margin-bottom: 40px;
+    .post-content-left {
+        grid-template:
+            'item1 item1 item1 item1    '
+            'item2 item3 item4 item6'
+            'item5 item5 item5 item5';
     }
-    .document_menu li {
-        margin-left: 20px;
-        border-bottom: none;
-        margin-top: 0;
+    .exhibition {
+        grid-template-areas:
+            'topleft'
+            'botleft'
+            'topright'
+            'botright';
     }
 
-    .products, #media-education, .document_menu, .photo_gallery {
-        display: none;
-    }
-    .infomation {
-        margin: 0;
-    }
-    .infomation {
+    .documentary-typical {
         display: unset;
-        padding-left: 40px;
     }
 
-    /* post */
-    .post{
-        display: block;
-    }
-    .facebook_item {
-        height: unset;
-    }
-    #footer{
-        padding-left: 40px;
-    }
-    .content_right{
-        /* display: grid; */
-        grid-template-areas: 'title_middle title_bottom';
-        gap: 20px;
-    }
-    .title_bottom h1{
-        margin: 0;
+    .post-new .left .tag-time {
+        display: none !important;
     }
 }
 
@@ -239,8 +188,6 @@
 
 /*pc*/
 @media all and (min-width:1025px){
-    .post-content-left-middle_2{
-        display: none;
-    }
+
 
 }

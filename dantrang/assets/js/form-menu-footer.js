@@ -21,6 +21,7 @@ document.addEventListener ('DOMContentLoaded',function(){
     <div class="menu-icon">
         <img class="menu-icon-item" src="./assets/img/Group 2.1.png" alt="">
     </div>
+    <div class="menu-list-box">
     <ul class="menu-list">
         <li><a href="./index.html"><i class="fa-solid fa-house-chimney"></i>giới thiệu</a></li>
         <li><a href="">tin tức-sự kiện</a></li>
@@ -37,6 +38,7 @@ document.addEventListener ('DOMContentLoaded',function(){
         <li><a href="">dịch vụ</a></li>
         <li><a href="./contact.html">liên hệ</a>
     </ul>
+    </div>
     `
     document.querySelector('.menu').insertAdjacentHTML('afterbegin', menuHTML);
 
