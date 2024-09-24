@@ -1,6 +1,5 @@
-document.addEventListener ('DOMContentLoaded',function(){
-    
-    const headertimeHTML=`
+document.addEventListener("DOMContentLoaded", function () {
+  const headertimeHTML = `
     <h6><i class="fa-solid fa-clock-rotate-left"></i> GIỜ MỞ CỬA:
             Tất cả các ngày trong tuần
             (Kể cả ngày Lễ, Tết)
@@ -11,12 +10,13 @@ document.addEventListener ('DOMContentLoaded',function(){
             </div>
     <img src="./assets/img/Flag_of_Vietnam.svg.webp" alt="">
 
-    `
-    document.querySelector('.header_time').insertAdjacentHTML('afterbegin', headertimeHTML);
+    `;
+  document
+    .querySelector(".header_time")
+    .insertAdjacentHTML("afterbegin", headertimeHTML);
 
-    
-    const menuHTML=`
-        <i  onclick=showSidebar() class="icon-menu fa-solid fa-bars"></i>
+  const menuHTML = `
+        <i onclick="showSidebar(event)" class="icon-menu fa-solid fa-bars"></i>
 
     <div class="menu-icon">
         <img class="menu-icon-item" src="./assets/img/Group 2.1.png" alt="">
@@ -39,10 +39,10 @@ document.addEventListener ('DOMContentLoaded',function(){
         <li><a href="./contact.html">liên hệ</a>
     </ul>
     </div>
-    `
-    document.querySelector('.menu').insertAdjacentHTML('afterbegin', menuHTML);
+    `;
+  document.querySelector(".menu").insertAdjacentHTML("afterbegin", menuHTML);
 
-    const footerHTML=`
+  const footerHTML = `
     <div class="infomation container">
             <div class="infomation_item logo">
                 <img src="./assets/img/Group 2.1.png" alt="">
@@ -100,11 +100,13 @@ document.addEventListener ('DOMContentLoaded',function(){
                 </div>
             </div>
         </div>
-    `
+    `;
 
-    document.querySelector('#footer').insertAdjacentHTML('afterbegin', footerHTML);
+  document
+    .querySelector("#footer")
+    .insertAdjacentHTML("afterbegin", footerHTML);
 
-    const menuiconHTML=`
+  const menuiconHTML = `
     <div class="icon-item">
                 <a href="">
                     <i class="fa-sharp fa-solid fa-ticket"></i>
@@ -129,7 +131,8 @@ document.addEventListener ('DOMContentLoaded',function(){
                     <div>đăng ký</div>
                 </a>
             </div>
-    `
-    document.querySelector('.menu-icon-list').insertAdjacentHTML('afterbegin', menuiconHTML);
-
+    `;
+  document
+    .querySelector(".menu-icon-list")
+    .insertAdjacentHTML("afterbegin", menuiconHTML);
 });
