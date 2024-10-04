@@ -618,26 +618,5 @@
       src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v20.0"
       nonce="EuJy9ouM"
     ></script>
-    <script>
-      function showSidebar(event) {
-        event.stopPropagation(); // Ngăn sự kiện lan truyền
-        console.log("Menu icon clicked");
-
-        const sidebar = document.querySelector(".menu-list-box");
-        console.log("Before:", sidebar.classList);
-
-        // Sử dụng toggle để thêm hoặc xóa lớp active
-        sidebar.classList.toggle("active"); // Thêm nếu không có, xóa nếu có
-        console.log(
-          sidebar.classList.contains("active")
-            ? "Added active class"
-            : "Removed active class"
-        );
-
-        // Kiểm tra giá trị của thuộc tính display
-        console.log("Display property:", getComputedStyle(sidebar).display);
-        console.log("After:", sidebar.classList);
-      }
-    </script>
   </body>
 </html>

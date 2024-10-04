@@ -71,7 +71,7 @@ ul.document_menu {
   z-index: 3;
 }
 .icon-menu {
-  display: none !important;
+  display: none;
 }
 
 /* Các mục con trong menu con */

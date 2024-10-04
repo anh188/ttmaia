@@ -16,19 +16,23 @@ document.addEventListener("DOMContentLoaded", function () {
     .insertAdjacentHTML("afterbegin", headertimeHTML);
 
   const menuHTML = `
-        <i onclick="showSidebar(event)" class="icon-menu fa-solid fa-bars"></i>
+        <div id="main" class="icon-menu">
+        <i onclick="openNav()" class="openbtn fa-solid fa-bars"></i>
+        <i onclick="closeNav()" class="closebtn fa-solid fa-xmark"></i>
+        </div>
+        
 
     <div class="menu-icon">
         <img class="menu-icon-item" src="./assets/img/Group 2.1.png" alt="">
     </div>
-    <div class="menu-list-box">
+    <div id="mySidebar" class="menu-list-box">
     <ul class="menu-list">
         <li><a href="./index.html"><i class="fa-solid fa-house-chimney"></i>giới thiệu</a></li>
         <li><a href="">tin tức-sự kiện</a></li>
         <li><a href="">trưng bày</a></li>
         <li><a href="./education.html">giáo dục truyền thông</a></li>
         <li><a href="">sản phẩm đặc trưng</a></li>
-       <li><a href="">tài liệu<i class="fa-solid fa-chevron-down" style="margin-left: 4px;"></i></a>
+       <li><a href="javascript:void(0);" onclick="toggleDocumentMenu()">tài liệu<i class="fa-solid fa-chevron-down" style="margin-left: 4px;"></i></a>
             <ul class="document_menu">
                 <li><a href="./documentary.html">Phim tài liệu</a></li>
                 <li><a href="./gallery.html">thư viện ảnh</a></li>

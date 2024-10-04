@@ -4,15 +4,8 @@
 
 /* mobile */
 @media all and (min-width: 320px) and (max-width: 767px) {
-  /* post */
-  .post {
+  .register_content {
     display: block;
-  }
-  .tag-time.d-flex.justify-content-lg-start.mt-3 {
-    justify-content: space-between;
-  }
-  .time {
-    margin-left: unset;
   }
 }
 

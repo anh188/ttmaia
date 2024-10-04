@@ -4,20 +4,24 @@
 
 /* mobile */
 @media all and (min-width: 320px) and (max-width: 767px) {
-  /* post */
-  .post {
+  .artifact {
     display: block;
   }
-  .tag-time.d-flex.justify-content-lg-start.mt-3 {
-    justify-content: space-between;
+  .modal_box {
+    width: unset;
+    height: unset;
   }
-  .time {
-    margin-left: unset;
+  .modal-content {
+    width: 350px !important;
+    height: unset;
   }
 }
 
 /*tablet*/
 @media (min-width: 767px) and (max-width: 1024px) {
+  .artifact {
+    display: block;
+  }
 }
 
 /*pc*/

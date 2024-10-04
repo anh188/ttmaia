@@ -1,32 +1,38 @@
-// document.querySelector(".icon-menu").addEventListener("click", function () {
-//   var menuList = document.querySelector(".menu-list-box");
-//   // Kiểm tra giá trị hiện tại của display
-//   menuList.style.display = "block"; // Hiển thị menu nếu đang ẩn
-// });
+function openNav() {
+  // Hiển thị sidebar
+  document.getElementById("mySidebar").style.display = "block";
 
-//function showSidebar(event) {
-//   event.stopPropagation(); // Ngăn sự kiện lan truyền
-//   console.log("Menu icon clicked");
+  // Hiển thị nút đóng, ẩn nút mở
+  document.getElementsByClassName("openbtn")[0].style.display = "none";
+  document.getElementsByClassName("closebtn")[0].style.display = "block";
+}
 
-//   const sidebar = document.querySelector(".menu-list-box");
-//   console.log("Before:", sidebar.classList);
+function closeNav() {
+  // Ẩn sidebar
+  document.getElementById("mySidebar").style.display = "none";
 
-//   // Sử dụng toggle để thêm hoặc xóa lớp active
-//   sidebar.classList.toggle("active"); // Thêm nếu không có, xóa nếu có
-//   console.log(
-//     sidebar.classList.contains("active")
-//       ? "Added active class"
-//       : "Removed active class"
-//   );
+  // Hiển thị nút mở, ẩn nút đóng
+  document.getElementsByClassName("openbtn")[0].style.display = "block";
+  document.getElementsByClassName("closebtn")[0].style.display = "none";
+}
+function toggleDocumentMenu() {
+  var menu = document.querySelector(".document_menu");
+  var menuList = document.getElementsByClassName("menu-list")[0];
 
-//   // Kiểm tra giá trị của thuộc tính display
-//   console.log("Display property:", getComputedStyle(sidebar).display);
-//   console.log("After:", sidebar.classList);
-// }
+  // Ẩn/hiện menu con
+  if (menu.style.display === "block") {
+    menu.style.display = "none"; // Ẩn menu con
 
-// $(document).ready(function () {
-//   $(".fa-chevron-down").click(function (e) {
-//     e.preventDefault(); // Prevent the default action of the <a> tag
-//     $(this).closest("a").next(".document_menu").slideToggle();
-//   });
-// });
+    // Chỉ khôi phục chiều cao cho điện thoại
+    if (window.innerWidth <= 766) {
+      menuList.style.height = "auto"; // Khôi phục chiều cao
+    }
+  } else {
+    menu.style.display = "block"; // Hiển thị menu con
+
+    // Chỉ điều chỉnh chiều cao cho điện thoại
+    if (window.innerWidth <= 766) {
+      menuList.style.height = "49%"; // Thay đổi chiều cao cho menu-list
+    }
+  }
+}

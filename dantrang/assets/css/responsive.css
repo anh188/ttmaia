@@ -1,17 +1,9 @@
 /* mobile-tablet */
 @media all and (max-width: 1024px) {
-  .header_time {
+  .header_time,
+  .document_menu {
     display: none;
-  }
-  .icon-menu {
-    display: flex !important;
-    width: 100%;
-    align-self: center;
-    /* align-items: end; */
-    justify-content: right;
-    color: #ffffff;
-    margin-right: 3%;
-    font-size: 30px;
+    transition: max-height 0.5s ease;
   }
   .menu-list-box {
     position: fixed;
@@ -26,10 +18,60 @@
   .product_img {
     display: inline-flex;
   }
+  .icon-menu {
+    /* display: block; */
+    display: flex;
+    width: 100%;
+    align-self: center;
+    justify-content: right;
+    color: #ffffff;
+    margin-right: 3%;
+    font-size: 30px;
+  }
+  .closebtn {
+    display: none;
+    z-index: 5;
+    cursor: pointer;
+  }
+  .openbtn {
+    /* display: none; */
+    z-index: 5;
+    cursor: pointer;
+  }
+  .document_menu li,
+  ul.document_menu li,
+  ul.document_menu {
+    background-color: unset;
+  }
 }
 
 /* mobile */
 @media all and (min-width: 320px) and (max-width: 767px) {
+  .menu {
+    position: fixed;
+    top: 0;
+  }
+  .menu-list li:hover > ul.document_menu {
+    display: none; /* Không hiển thị menu con khi hover trên điện thoại */
+  }
+  .document_menu li {
+    position: unset;
+    top: 20px;
+    padding: 1.5px;
+  }
+  ul.document_menu li {
+    padding: 4px 8px;
+    text-align: left;
+    border: none;
+  }
+  ul.document_menu {
+    position: unset;
+    z-index: 3;
+    margin-left: 20px !important;
+  }
+  .menu-list a {
+    position: unset;
+  }
   .post-content-left-middle_2 {
     display: none;
   }
@@ -44,6 +86,10 @@
     width: 100%;
     background-color: #6e6756;
     margin-top: 60px;
+    height: 36%;
+  }
+  .menu-list li {
+    padding: 5.5px 0 !important;
   }
   .menu-list-box {
     height: 100vh;
@@ -171,31 +217,28 @@
 /*tablet*/
 @media (min-width: 767px) and (max-width: 1024px) {
   /* menu-list */
-  /* .menu-list{
-        display: none !important;
-    } */
-  /* .menu-list{
-        width: 30%;
-        display: block;
-        position: fixed;
-        background-color: #6E6756;
-        text-align: left;
-        height: 100vh;
-        left: 0;
-        top: 0;
-        margin: 0;
-        padding-top: 40px;
-        overflow-y: -200px;
-        transition: all 0.3s ease;
-        cursor: pointer;
-    } */
+  .menu-list {
+    width: 30%;
+    display: block;
+    position: fixed;
+    background-color: #6e6756;
+    text-align: left;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding-top: 40px;
+    overflow-y: -200px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
 
   .menu-list li {
     margin-top: 20px;
   }
 
   ul.document_menu {
-    display: block !important;
+    /* display: block !important; */
     position: unset;
     top: 0;
     margin-bottom: 40px;
